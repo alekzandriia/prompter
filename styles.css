@@ -34,6 +34,7 @@ aside {
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: scroll;
+  gap: 1rem;
 }
 
 aside footer {
@@ -54,4 +55,14 @@ h1 {
 
 #prompt {
   font-size: 4rem;
+}
+
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  aside {
+    height: fit-content;
+    order: +1;
+  }
 }
