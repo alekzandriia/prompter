@@ -10,3 +10,8 @@ const words = {
 
 const prompt = document.getElementById("prompt")
 prompt.textContent = `${words.adjectives[Math.floor(Math.random()*words.adjectives.length)]} ${words.nouns[Math.floor(Math.random()*words.nouns.length)]}`
+
+const refresh = document.getElementById("refresh")
+refresh.addEventListener("click", () => {
+  prompt.textContent = `${words.adjectives[Math.floor(Math.random()*words.adjectives.length)]} ${words.nouns[Math.floor(Math.random()*words.nouns.length)]}`
+})
